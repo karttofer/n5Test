@@ -1,0 +1,9 @@
+{
+  "welcome": {
+    "titleHarry": "Hello, this is the Harry App",
+    "titleRick": "Hello, this is the Rick App"
+  },
+  "card": {
+    "button": "More information"
+  }
+}
