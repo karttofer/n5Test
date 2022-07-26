@@ -20,5 +20,22 @@ export const CardImg = styled.img`
   }
 `;
 
+export const Main = styled.div`
+  display: grid;
+  grid-template-columns: auto auto;
+  height: fit-content;
+  border: 1px solid black;
+  border-style: dotted;
+`;
+
+export const H1 = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: underline;
+`;
+
 Card.Title = CardTitle;
 Card.Img = CardImg;
+
+Main.H1 = H1;

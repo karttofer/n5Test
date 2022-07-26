@@ -7,11 +7,14 @@ import CardComponent from './CardComponent';
 // Hooks
 import { useRequest } from '../hooks/useRequest';
 
+// Styled
+import { Main } from './Library';
+
 const App = ({ i18 }) => {
   const [isLoading, response] = useRequest({ type: 'students' });
   return (
-    <div>
-      <h1>{i18?.welcome.titleH}</h1>
+    <Main>
+      <Main.H1>{i18?.welcome.titleH}</Main.H1>
       {isLoading === false
         ? response.map((info) => (
             <CardComponent
@@ -22,7 +25,7 @@ const App = ({ i18 }) => {
             />
           ))
         : null}
-    </div>
+    </Main>
   );
 };
 
