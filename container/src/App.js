@@ -16,6 +16,9 @@ import common_en from './i18/en.json';
 import common_es from './i18/es.json';
 import { useTranslation } from 'react-i18next';
 
+// Styled
+import { Main, Select } from './library';
+
 i18next.init({
   interpolation: { escapeValue: false },
   lng: 'en',
@@ -36,12 +39,12 @@ const Header = () => {
     i18n.changeLanguage(e.target.value);
   };
   return (
-    <header>
-      <select name="select" onChange={(e) => changeLanguage(e)}>
-        <option value="en">EN 🇺🇸</option>
-        <option value="es">ES 🇪🇸</option>
-      </select>
-    </header>
+    <Main>
+      <Select name="select" onChange={(e) => changeLanguage(e)}>
+        <Select.Option value="en">EN 🇺🇸</Select.Option>
+        <Select.Option value="es">ES 🇪🇸</Select.Option>
+      </Select>
+    </Main>
   );
 };
 
