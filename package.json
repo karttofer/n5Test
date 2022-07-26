@@ -1,0 +1,28 @@
+{
+  "name": "n5test",
+  "version": "1.0.0",
+  "description": "```npm cd container npm start ```",
+  "main": "run.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "run-harry": " ./harry/run.js",
+    "run-rick": "node ./rick/run.js",
+    "run-container": "node ./container/run.js",
+    "install-all": "node ./run.js",
+    "run-all": "concurrently \"cd ./harry && npm install && npm start\" \"cd ./rick && npm install && npm start\" \"cd ./container && npm install && npm start\"",
+    "only-run": "concurrently \"cd ./harry && npm start\" \"cd ./rick && npm start\" \"cd ./container && npm start\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/karttofer/n5Test.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/karttofer/n5Test/issues"
+  },
+  "homepage": "https://github.com/karttofer/n5Test#readme",
+  "dependencies": {
+    "concurrently": "^7.3.0"
+  }
+}

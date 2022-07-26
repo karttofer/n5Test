@@ -1,17 +1,26 @@
+### Welcome to my - n5 Test 🚀
 
-# How to run it
+This is my personal test for n5, I hope you will like it. In the following concepts we will say what we use to optimize the applications :)
 
-```npm
-cd container
-npm start
+## Technologies
+
+- Micro-frontends
+- Concurrently
+- RectJs
+- Styled Components
+- Babel
+- Webpacks 5
+
+## How run the app
+
+In this section try to optimize it as much as possible, leaving us only having to run a single command for it :)
+
+```js
+npm run install-all
 ```
 
-```npm
-cd harry
-npm start
-```
+Run the app when you already installed all the packpages
 
-```npm
-cd rick
-npm start
+```js
+npm run only-run
 ```
