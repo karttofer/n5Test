@@ -2,17 +2,17 @@
 import React from 'react';
 
 // Styled Components
-import { HImg, HCard, HTitle } from './Library';
+import { Card } from './Library';
 
 // Assets
 import noImg from '../assets/img/no-image.png';
 
 const CardComponent = ({ name, src }) => {
   return (
-    <HCard>
-      <HImg src={src ? src : noImg} />
-      <HTitle>{name}</HTitle>
-    </HCard>
+    <Card className="card">
+      <Card.Img src={src ? src : noImg} />
+      <Card.Title>{name}</Card.Title>
+    </Card>
   );
 };
 
